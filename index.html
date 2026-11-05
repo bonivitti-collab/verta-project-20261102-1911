@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibe Studio // Live Dev</title>
+    <title>Vibe Studio // Pronto para Criar</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background: #07090e; }
         @keyframes pulseSlow {
             0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(0.96); }
+            50% { opacity: 0.5; transform: scale(0.95); }
         }
-        .pulse-slow { animation: pulseSlow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        .pulse-slow { animation: pulseSlow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
     </style>
 </head>
 <body class="min-h-screen bg-[#07090e] text-zinc-100 flex flex-col items-center justify-center p-6 selection:bg-emerald-500 selection:text-black relative overflow-hidden">
@@ -23,25 +23,23 @@
     <div class="relative z-10 max-w-lg w-full bg-zinc-900/80 border border-zinc-800/80 backdrop-blur-xl rounded-2xl p-8 sm:p-10 shadow-2xl text-center space-y-6">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold tracking-wide">
             <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-slow"></span>
-            Vibe Live-Reload Conectado • Pronto para Criação
+            Sincronização Automática Ativa
         </div>
         <div class="space-y-2">
             <h1 class="text-3xl font-extrabold text-white tracking-tight">Vibe Studio</h1>
             <p class="text-sm text-zinc-400 leading-relaxed">
-                Ambiente autônomo ativo. Vá até o seu terminal e digite a sua ideia para ver esta página se transformar ao vivo.
+                Sem comandos complicados. Basta escrever no terminal o que você quer criar ou qual projeto deseja abrir.
             </p>
         </div>
         <div class="bg-black/50 border border-zinc-800 rounded-xl p-4 text-left font-mono text-xs text-zinc-400 space-y-2">
-            <div class="flex items-center gap-2 text-zinc-500">
-                <span class="text-emerald-400">❯</span> Exemplo de comando no terminal:
-            </div>
-            <p class="text-emerald-300 font-sans text-sm pl-4">
-                "Crie um aplicativo moderno de delivery de café com carrinho interativo"
-            </p>
+            <div class="text-zinc-500">Exemplos do que escrever no terminal:</div>
+            <p class="text-emerald-300 font-sans text-sm pl-2">• "Abre o solaris"</p>
+            <p class="text-emerald-300 font-sans text-sm pl-2">• "Abre o antitrader"</p>
+            <p class="text-emerald-300 font-sans text-sm pl-2">• "Cria uma landing page moderna para venda de imóveis"</p>
         </div>
         <div class="text-xs text-zinc-600 pt-2 border-t border-zinc-800/60 flex items-center justify-between">
-            <span>Dell G5 • Gemini 3.8 Flash</span>
-            <span class="text-emerald-400/80 font-mono">http://localhost:5173</span>
+            <span>Dell G5 • Verta 120B</span>
+            <span class="text-emerald-400/80 font-mono">127.0.0.1:5173</span>
         </div>
     </div>
 </body>

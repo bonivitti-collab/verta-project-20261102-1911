@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo – Danillo Boni Vitti</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media print {
+      body { background: white; color: #000; }
+      .no-print { display: none; }
+    }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background:#f9fafb; color:#111; }
+    .section-title { @apply text-xl font-semibold text-emerald-600 mt-6 mb-2; }
+    .item-title { @apply font-medium text-lg; }
+    .item-sub { @apply text-sm text-gray-600; }
+  </style>
+</head>
+<body class="max-w-3xl mx-auto p-8">
+  <header class="text-center">
+    <h1 class="text-4xl font-bold text-emerald-700">Danillo Boni Vitti</h1>
+    <p class="text-lg text-gray-700">Desenvolvedor Full‑Stack • Data Engineer • AI Enthusiast</p>
+    <p class="text-sm text-gray-600">
+      <a href="mailto:danillo@example.com">danillo@example.com</a> • +55 11 9 9999‑9999 • <a href="https://linkedin.com/in/danillobonivitti" target="_blank">linkedin.com/in/danillobonivitti</a>
+    </p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Experiência Profissional</h2>
+
+    <div class="mb-4">
+      <p class="item-title">Senior Software Engineer – <span class="text-emerald-600">Verta</span></p>
+      <p class="item-sub">Jan 2022 – Presente • São Paulo, SP</p>
+      <ul class="list-disc list-inside text-sm text-gray-800">
+        <li>Arquitetura e desenvolvimento de aplicações React + TypeScript com Vite.</li>
+        <li>Implementação de pipelines de dados em Python/Airflow para análise de métricas.</li>
+        <li>Mentoria de equipe de 5 devs e revisão de código.</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <p class="item-title">Full‑Stack Engineer – <span class="text-emerald-600">Solaris</span></p>
+      <p class="item-sub">Mar 2020 – Dez 2021 • Rio de Janeiro, RJ</p>
+      <ul class="list-disc list-inside text-sm text-gray-800">
+        <li>Criação de SPA com React, Redux e Tailwind CSS.</li>
+        <li>Integração de APIs RESTful e GraphQL.</li>
+        <li>Automação de testes com Cypress e Jest.</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <p class="item-title">Software Engineer – <span class="text-emerald-600">Antitrader</span></p>
+      <p class="item-sub">Jun 2018 – Fev 2020 • Belo Horizonte, MG</p>
+      <ul class="list-disc list-inside text-sm text-gray-800">
+        <li>Desenvolvimento de bots de trading em Python.</li>
+        <li>Construção de dashboards em Vue.js + Tailwind.</li>
+        <li>Otimização de algoritmos de back‑testing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Formação Acadêmica</h2>
+    <p class="item-title">Bacharel em Engenharia de Computação</p>
+    <p class="item-sub text-gray-600">Universidade Federal de Minas Gerais – 2014 – 2018</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Habilidades Técnicas</h2>
+    <ul class="flex flex-wrap gap-2 text-sm">
+      <li class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded">React / TypeScript</li>
+      <li class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded">Node.js / Express</li>
+      <li class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded">Python / Pandas</li>
+      <li class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded">Docker / Kubernetes</li>
+      <li class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded">AWS / GCP</li>
+      <li class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded">SQL / NoSQL</li>
+      <li class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded">Git / CI‑CD</li>
+    </ul>
+  </section>
+
+  <section class="no-print mt-8 text-center">
+    <button onclick="window.print()" class="px-4 py-2 bg-emerald-600 text-white rounded hover:bg-emerald-700">
+      Salvar como PDF
+    </button>
+  </section>
+</body>
+</html>
