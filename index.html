@@ -1,46 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibe Studio // Pronto para Criar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #07090e; }
-        @keyframes pulseSlow {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(0.95); }
-        }
-        .pulse-slow { animation: pulseSlow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imóveis de Luxo – Sua Nova Casa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .hero { background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat; }
+    .gradient { background: linear-gradient(135deg, #0ea5e9, #7c3aed); }
+  </style>
 </head>
-<body class="min-h-screen bg-[#07090e] text-zinc-100 flex flex-col items-center justify-center p-6 selection:bg-emerald-500 selection:text-black relative overflow-hidden">
-    <div class="fixed inset-0 pointer-events-none">
-        <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-emerald-500/10 blur-[140px] rounded-full"></div>
-        <div class="absolute -bottom-40 right-10 w-[400px] h-[300px] bg-teal-500/10 blur-[130px] rounded-full"></div>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="gradient text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">Casa dos Sonhos</h1>
+      <nav class="space-x-4">
+        <a href="#sobre" class="hover:underline">Sobre</a>
+        <a href="#imoveis" class="hover:underline">Imóveis</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+      </nav>
     </div>
-    <div class="relative z-10 max-w-lg w-full bg-zinc-900/80 border border-zinc-800/80 backdrop-blur-xl rounded-2xl p-8 sm:p-10 shadow-2xl text-center space-y-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold tracking-wide">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-slow"></span>
-            Sincronização Automática Ativa
-        </div>
-        <div class="space-y-2">
-            <h1 class="text-3xl font-extrabold text-white tracking-tight">Vibe Studio</h1>
-            <p class="text-sm text-zinc-400 leading-relaxed">
-                Sem comandos complicados. Basta escrever no terminal o que você quer criar ou qual projeto deseja abrir.
-            </p>
-        </div>
-        <div class="bg-black/50 border border-zinc-800 rounded-xl p-4 text-left font-mono text-xs text-zinc-400 space-y-2">
-            <div class="text-zinc-500">Exemplos do que escrever no terminal:</div>
-            <p class="text-emerald-300 font-sans text-sm pl-2">• "Abre o solaris"</p>
-            <p class="text-emerald-300 font-sans text-sm pl-2">• "Abre o antitrader"</p>
-            <p class="text-emerald-300 font-sans text-sm pl-2">• "Cria uma landing page moderna para venda de imóveis"</p>
-        </div>
-        <div class="text-xs text-zinc-600 pt-2 border-t border-zinc-800/60 flex items-center justify-between">
-            <span>Dell G5 • Verta 120B</span>
-            <span class="text-emerald-400/80 font-mono">127.0.0.1:5173</span>
-        </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero h-[70vh] flex items-center justify-center text-center text-white">
+    <div class="bg-black/40 p-8 rounded-lg">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Encontre o imóvel perfeito</h2>
+      <p class="text-lg mb-6">Apartamentos, casas e coberturas de alto padrão em São Paulo</p>
+      <button class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-6 rounded transition">
+        Ver Imóveis
+      </button>
     </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-8">Por que escolher a Casa dos Sonhos?</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto mb-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a2 2 0 100-4 2 2 0 000 4zm-8 0a2 2 0 100-4 2 2 0 000 4z"/></svg>
+          <h4 class="font-medium text-xl mb-2">Variedade</h4>
+          <p class="text-gray-600">Mais de 200 opções em diferentes bairros.</p>
+        </div>
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto mb-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"/></svg>
+          <h4 class="font-medium text-xl mb-2">Facilidade</h4>
+          <p class="text-gray-600">Visitas virtuais e agendamento online.</p>
+        </div>
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto mb-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <h4 class="font-medium text-xl mb-2">Segurança</h4>
+          <p class="text-gray-600">Documentação completa e suporte jurídico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Imóveis -->
+  <section id="imoveis" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-12">Imóveis em Destaque</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Apartamento" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold text-xl mb-2">Apartamento 3 quartos</h4>
+            <p class="text-gray-600 mb-2">São Paulo – Vila Mariana</p>
+            <p class="text-emerald-600 font-bold text-lg">R$ 1.200.000</p>
+            <button class="mt-4 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded">Ver Detalhes</button>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Casa" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold text-xl mb-2">Casa com Piscina</h4>
+            <p class="text-gray-600 mb-2">São Paulo – Morumbi</p>
+            <p class="text-emerald-600 font-bold text-lg">R$ 3.500.000</p>
+            <button class="mt-4 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded">Ver Detalhes</button>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1598928506315-5c5c2c5c9e0b" alt="Cobertura" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold text-xl mb-2">Cobertura Duplex</h4>
+            <p class="text-gray-600 mb-2">São Paulo – Itaim Bibi</p>
+            <p class="text-emerald-600 font-bold text-lg">R$ 5.800.000</p>
+            <button class="mt-4 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded">Ver Detalhes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-lg">
+      <h3 class="text-3xl font-semibold text-center mb-8">Fale Conosco</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nome" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        <input type="email" placeholder="E‑mail" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        <textarea placeholder="Mensagem" rows="4" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 rounded transition">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Casa dos Sonhos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
